@@ -1,0 +1,7 @@
+{% extends "blog/header.html" %}
+
+{% block content %}
+  <h2> {{article.title}} </h2>
+  <h5> {{article.date}}, {{article.author}} </h5>
+  {{article.text|linebreaks}}
+{% endblock %}
